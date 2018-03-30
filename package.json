@@ -66,6 +66,8 @@
     "babel-preset-react-app": "^3.1.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-runtime": "6.26.0",
+    "nodemon": "^1.17.2",
+    "pm2": "^2.10.2",
     "webpack-merge": "^4.1.2"
   },
   "scripts": {

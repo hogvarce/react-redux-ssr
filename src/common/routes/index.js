@@ -4,6 +4,7 @@ const routes = [
     {
         path: "/banners",
         component: Banners,
+        fetchInititalData: Banners.inititalData
     }
 ];
 

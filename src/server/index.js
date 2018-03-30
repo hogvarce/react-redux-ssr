@@ -19,8 +19,8 @@ app.get('*', (req, res) => {
     const store = configureStore();
 
     const promises = routes.reduce((acc, route) => {
-        if (matchPath(req.url, route) && route.component) {
-            acc.push(Promise.resolve(store.dispatch(route.component.componentDidMount())));
+        if (matchPath(req.url, route)) {
+            acc.push(Promise.resolve(route.fetchInititalData(store)));
         }
         return acc;
     }, []);

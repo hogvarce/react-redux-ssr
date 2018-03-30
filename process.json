@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "server-start",
+      "script": "./node_modules/.bin/nodemon",
+      "args": "server.js"
+    },
+    {
+      "name": "webpack",
+      "script": "./node_modules/.bin/webpack",
+      "args": "-w",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}

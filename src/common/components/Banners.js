@@ -3,6 +3,9 @@ import { connect } from "react-redux";
 import { fetchBanners } from '../stores/banners';
 
 class Banners extends Component {
+    static inititalData(store) {
+        return store.dispatch(fetchBanners());
+    }
     componentDidMount() {
         this.props.fetchBanners();
     }
